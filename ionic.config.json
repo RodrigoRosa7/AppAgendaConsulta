@@ -1,0 +1,7 @@
+{
+  "name": "AppAgendaConsulta",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
