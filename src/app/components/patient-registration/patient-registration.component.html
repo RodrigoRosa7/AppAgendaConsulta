@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastrar Paciente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="patientForm" (ngSubmit)="onSave()">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Nome completo</ion-label>
+        <ion-input formControlName="fullName" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Data de nascimento</ion-label>
+        <ion-input formControlName="birthDate" type="date"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">CPF</ion-label>
+        <ion-input formControlName="cpf" type="text" maxlength="11"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Telefone</ion-label>
+        <ion-input formControlName="phone" type="tel"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input formControlName="email" type="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Endereço</ion-label>
+        <ion-input formControlName="address" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Observações</ion-label>
+        <ion-textarea formControlName="observations"></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+    <ion-button expand="full" type="submit">Salvar</ion-button>
+  </form>
+</ion-content>
